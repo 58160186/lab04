@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 3000px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+
+    
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4><center>ModPhen's Blog</center></h4>
+      <ul class="nav nav-pills nav-stacked">
+          <center><li><img src="mod.jpg" width="150" height="150"></li></center><br>
+        <li class="active"><a href="#section1">Home</a></li>
+        <li><a href="#section2">JavaScript1</a></li>
+        <li><a href="#section3">JavaScript2</a></li>
+        <li><a href="#section3">JavaScript3</a></li>
+        <li><a href="#section3">JavaScript4</a></li>
+        <li><a href="#section3">JavaScript5</a></li>
+        <li><a href="#section3">JavaScript6</a></li>
+        <li><a href="#section3">JavaScript7</a></li>
+        <li><a href="#section3">JavaScript8</a></li>
+        <li><a href="#section3">JavaScript9</a></li>
+        <li><a href="#section3">JavaScript10</a></li>
+
+      </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Blog..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+      <center><h2>JavaScript5</h2></center>
+      <hr>
+      
+      <br>
+      <center><img src="5.jpg"></center>
+      <br>
+      
+      
+      <p>บรรทัดที่ห้าและหก ใช้function alertUser()  โดยให้เด้งหน้าต่างใหม่แล้วมีข้อความขึ้นมาว่า "An alert box contains an exclamation mark"</p>
+      <p>บรรทัดที่แปด ใช้function confirmUser()</center></p>
+      <p>บรรทัดที่เก้า ให้ตัวแปร msg เก็บข้อความ "please confirm that you want to test another button?" </p>
+      <p>บรรทัดที่สิบเอ็ด if (confirm(msg)) ให้ if เช็คการยืนยันข้อความแล้วส่งค่า msg เข้ามา  </p>
+      <p>บรรทัดที่สิบสอง ถ้าใช่ให้พิมพ์ข้อความ &lt;h2>You selected OK &lt;/h2>  </p>
+      <p>บรรทัดที่สิบสามและสิบสี่ ถ้าไม่ใช่ให้พิมพ์ข้อความ &lt;h2>You selected Cancel &lt;/h2>  </p>
+      <p>บรรทัดที่สิบหก ใช้function promptUser()  </p>
+      <p>บรรทัดที่สิบเจ็ด ให้ตัวแปร name1 เก็บข้อความ What is your name? แล้วมีช่องว่างให้ใส่ข้อความ  </p>
+      <p>บรรทัดที่สิบแปด ให้พิมพ์ข้อความ &lt;h2>welcome to this page " + name1 + " &lt;/h2> แล้วต่อด้วย name1 </p>
+      <br><br>
+      <p><center><b><u>Output</u></b></center></p>
+      <br>
+      <center><img src="5-5-1.jpg"></center><br><br>
+      <p><center>============================================================================================== </center></p><br>
+
+<p><center>เมื่อเราคลิ๊ก Click here to test alert() </center></p><br>
+
+
+      <center><img src="5-5-2.jpg"></center><br><br>
+      <p><center>เมื่อเราคลิ๊ก Click here to test comfirm() </center></p><br>
+      <p><center>============================================================================================== </center></p><br>
+
+      <center><img src="5-5-3.jpg"></center><br>
+      <p><center>ถ้าเรากดตกลงจะมีข้อความขึ้นมาว่า </center></p>
+
+      <center><img src="5-5-4.jpg"></center><br>
+      <p><center>ถ้าเรากดยกเลิกจะมีข้อความขึ้นมาว่า  </center></p>
+      <center><img src="5-5-5.jpg"></center><br><br>
+      <p><center>============================================================================================== </center></p><br>
+      <p><center>เมื่อเราคลิ๊ก Click here to test prompt() </center></p><br>
+      <center><img src="5-5-6.jpg"></center><br>
+<p><center>ถ้าเรากดตกลงจะมีข้อความขึ้นมาว่า </center></p>
+      <center><img src="5-5-7.jpg"></center>
+      <p><center>ถ้าเรากดยกเลิกจะมีข้อความขึ้นมาว่า  </center></p>
+      <center><img src="5-5-8.jpg"></center>
+      
+      <p><center>============================================================================================== </center></p><br>
+      <br>
+
+      
+      
+
+</body>
+</html>
