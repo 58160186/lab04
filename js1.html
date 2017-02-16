@@ -1,90 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>JavaScript</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-    .row.content {height: 3000px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      background-color: #FFCC99;
-      height: 100%;
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
     }
     
-    /* Set black background color, white text and some padding */
+    /* Add a gray background color and some padding to the footer */
     footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height: auto;} 
+      background-color: #f2f2f2;
+      padding: 25px;
     }
 
-    
+    p {
+        color: red;
+        font-size: 25px;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    p2 {
+        color: black;
+        font-size: 15px;
+        text-align: center;
+        
+    }
   </style>
 </head>
 <body>
 
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav">
-      <h4><center>ModPhen's Blog</center></h4>
-      <ul class="nav nav-pills nav-stacked">
-          <center><li><img src="mod.jpg" width="150" height="150"></li></center><br>
-        <li class="active"><a href="#section1">Home</a></li>
-        <li><a href="#section2">ข้อ1</a></li>
-        <li><a href="#section3">ข้อ2</a></li>
-        <li><a href="#section3">ข้อ3</a></li>
-        <li><a href="#section3">ข้อ4</a></li>
-        <li><a href="#section3">ข้อ5</a></li>
-        <li><a href="#section3">ข้อ6</a></li>
-        <li><a href="#section3">ข้อ7</a></li>
-        <li><a href="#section3">ข้อ8</a></li>
-        <li><a href="#section3">ข้อ9</a></li>
-        <li><a href="#section3">ข้อ10</a></li>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand">Phen's 58160186</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">JvacaScript</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+       
+      
+    </div>
+  </div>
+</nav>
 
-      </ul><br>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search Blog..">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
-      </div>
+
+  
+    <img src="js.gif" width="1349" height="320">   
+    <div class="container text-center"> 
+    
+    
+  </div>
+</div>
+  
+<div class="container-fluid bg-3 text-center">    
+  <h2>JavaScript</h2><br>
+  <br>
+  
+      
+      <pre>
+          <p>ข้อที่ 1</p>
+          
+          <center><img src="1.jpg" width="550" height="279"></center><br>
+      <table border="0" align="center">
+          
+
+      <tr>
+          <td align="left">บรรทัดที่แปดพิมพ์แสดงค่าอัพเดตวัน/เดือน/ปี และเวลาในปัจจุบัน โดยใช้คำสั่ง document.lastModified</td>
+      </tr>
+      
+      </table> 
+      <p>output!</p>
+<h3>First Example of Java Script</h3>
+<script language="JavaScript">
+document.write("Last updated on " + document.lastModified )
+</script>
+      
+      
+      
+      </pre>
+    </div>
+    
+
+<div class="container-fluid bg-3 text-center">    
+  
+  <br>
+  
+      
+      <pre>
+          <p>ข้อที่ 2</p>
+          
+          <center><img src="2.jpg" width="484" height="323"></center><br>
+      <table border="0" align="center">
+          
+
+      <tr>
+          <td align="left">บรรทัดที่แปด พิมพ์สตริง &lt;h1>Factorials&lt;/h1></td>
+      </tr>
+      <tr><td align="left">บรรทัดที่เก้า วนลูป 9 รอบ และกำหนดค่าของตัวแปร fact = fact * i</td></tr>
+      <tr><td align="left">บรรทัดที่สิบ พิมพ์ค่าของตัวแปร i ต่อด้วย ! = และค่าของตัวแปร fact</td></tr>
+      <tr><td align="left">บรรทัดที่สิบเอ็ด พิมพ์ข้อความ &lt;br></td></tr>
+      </table> 
+
+
+      <p>output!</p>
+<h3>Another Exemple of JavaScript</h3>
+    <script language="JavaScript">
+    document.write("<h1>Factorials</h1>");
+    for (i = 1, fact =1; i<10; i++, fact = fact*i){
+        document.write(i+ "! = " + fact);
+        document.write("<BR>");
+    }
+    </script>
+      </pre>
     </div>
 
-    <div class="col-sm-9">
-      <center><h2>JavaScript1</h2></center>
-      <hr>
-      
-      <br>
-      <center><img src="1.JPG"></center>
-      <br>
-      
-      
-      <p><center>บรรทัดที่แปดพิมพ์แสดงค่าอัพเดตวัน/เดือน/ปี และเวลาในปัจจุบัน โดยใช้คำสั่ง document.lastModified</center></p>
-      <br><br>
-      <p><center><b><u>Output</u></b></center></p>
-      <br>
-      <center><img src="1-1.jpg"></center>
-      <br>
 
-      
-      
 
-</body>
+
+
+    <div class="container-fluid bg-3 text-center">    
+  
+  <br>
+  
+      
+      <pre>
+          <p>ข้อที่ 3</p>
+          
+          <center><img src="3.jpg" width="671" height="267"></center><br>
+      <table border="0" align="center">
+          
+
+      <tr>
+          <td align="left">บรรทัดที่แปด input type="button" เป็นปุ่มธรรมดา ส่วนมาก จะใส่โค้ด javascript เพื่อให้ปุ่มทำงานตาม event ต่าง ๆ</td>
+      </tr>
+      <tr><td align="left">value="Click me" เป็นค่าของข้อมูลที่ใส่คำว่า Click me</td></tr>
+      <tr><td align="left">onclick="alert('You clicked me')" เรียกใช้ onclickปุ่มจะเด้งขึ้นมาตรวจสอบการยืนยันว่าจะทำสิ่งนี้ใช่หรือไม่</td></tr>
+      
+      </table> 
+
+
+      <p>output!</p>
+<h3>Heading Events in JavaScript</h3>
+    <form>
+        <input type="button" value="Click me" onclick="alert('You clicked me')" >
+  </form>
+      </pre>
+    </div>
+
+
+
+    <div class="container-fluid bg-3 text-center">    
+  
+  <br>
+  
+      
+      <pre>
+          <p>ข้อที่ 4</p>
+          
+          <center><img src="4.jpg" width="510" height="424"></center><br>
+      <table border="0" align="center">
+          
+
+      <tr>
+          <td align="left">บรรทัดที่ห้า สร้าง function outputDate()</td>
+      </tr>
+      <tr><td align="left">บรรทัดที่หก var d = new Data() สร้าง object ข้อมูลวันที่และเวลา</td></tr>
+      <tr><td align="left">บรรทัดที่เจ็ด document.write(d.toLocaleString()) พิมพ์แสดงค่าวันที่และเวลาปัจจุบันโดยแปลงข้อมูลเป็นสตริง</td></tr>
+      <tr><td align="left">บรรทัดที่สิบสี่ เรียกใช้ฟังก์ชัน outputDate()</td></tr>
+      
+      
+      </table> 
+
+<p>output!</p>
+<script language="JavaScript">
+function outputDate() {
+    var d = new Date();
+    document.write(d.toLocaleString()); }
+</script>
+<h1>The data and time are</h1>
+    <script language="JavaScript">
+    outputDate();
+    </script>
+
+    
+
+    
+  </body>
 </html>
