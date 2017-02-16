@@ -403,57 +403,50 @@ if (document.images){
           
 
       <tr>
-          <td align="left">บรรทัดที่ห้า สร้าง function outputDate()</td>
+          <td align="left">บรรทัดที่ห้า สร้าง function doMoveBrowser() รับค่า form</td>
       </tr>
-      <tr><td align="left">บรรทัดที่หก ตรวจสอบ document ชนิด images (รูปภาพ)</td></tr>
-      <tr><td align="left">บรรทัดที่หก ถ้าจริง ให้ document.images["docs"].src = docsOn.src</td></tr>
-      <tr><td align="left">บรรทัดที่เก้า สร้าง function unhighlightdocs()</td></tr>
-      <tr><td align="left">บรรทัดที่สิบ ตรวจสอบ document ชนิด images (รูปภาพ)</td></tr>
-      <tr><td align="left">บรรทัดที่สิบ ถ้าจริง ให้ document.images["docs"].src = docsOff.src</td></tr>
-      <tr><td align="left">บรรทัดที่สิบสอง ตรวจสอบ document ชนิด images (รูปภาพ)</td></tr>
-      <tr><td align="left">บรรทัดที่สิบสาม ถ้าจริง ให้ตัวแปร docsOn เก็บค่า Images (รูปภาพ)</td></tr>
-      <tr><td align="left">บรรทัดที่สิบสี่ ตัวแปร docsOn.src เก็บไฟล์รูปภาพ ชื่อ gg_color.png</td></tr>
-      <tr><td align="left">บรรทัดที่สิบห้า ถ้าจริง ให้ตัวแปร docsOff เก็บค่า Images (รูปภาพ)</td></tr>
-      <tr><td align="left">บรรทัดที่สิบหก ตัวแปร docsOff.src เก็บไฟล์รูปภาพ ชื่อ gg_gray.png</td></tr>
-      <tr><td align="left">บรรทัดที่ยี่สิบสาม ให้ลิงค์ไปยัง www.google.com </td></tr>
-      <tr><td align="left">บรรทัดที่ยี่สิบสี่ ใเมื่อเอาเคอร์เซอร์ไปบริเวณรูปภาำจะเรียกฟังก์ชั่น highlightdocs() และเมื่อกดรูปภาำจะเรียกฟังก์ชั่น unhighlightdocs() </td></tr>
-      <tr><td align="left">บรรทัดที่ยี่สิบห้า ใส่รูปภาพไฟล์ชื่อ gg_gray.png ตั้งชื่อว่า docs ให้มีความสูง (Height) 250, กว้าง (Width) 250 และให้เส้นขอบ =0 </td></tr>
+      <tr><td align="left">บรรทัดที่หก ให้ parent เก็บค่าที่ตั้งของลิงค์ แล้วเก็บการสร้าง form ประเภท list (รายการ) มีรายการตามฟังก์ชั่นชื่อ getSelectedValue()</td></tr>
+      <tr><td align="left">บรรทัดที่แปด สร้าง function getSelectedValue()</td></tr>
+      <tr><td align="left">บรรทัดที่เก้า รีเทิร์นค่า document ชื่อ form1 ประเภท list (รายการ) ที่คำสั่ง selectedIndex กลับ </td></tr>
+      <tr><td align="left">บรรทัดที่สิบเอ็ด สร้าง function showURL(form)</td></tr>
+      <tr><td align="left">บรรทัดที่สิบสอง สร้าง form ประเภท TextBox (กล่องข้อความ) ให้เก็บการสร้าง form ประเภท list (รายการ) มีรายการตามฟังก์ชั่นชื่อ getSelectedValue()</td></tr>
+      <tr><td align="left">บรรทัดที่สิบเก้า สร้าง form ชื่อ form1</td></tr>
+      <tr><td align="left">บรรทัดที่ยี่สิบ ประเภท list (รายการ) เรียกใช้ฟังก์ชั่นชื่อ showURL(this.form) </td></tr>
+      <tr><td align="left">บรรทัดที่ยี่สิบเอ็ด รายการที่ 1 แสดงข้อความ "Where do you want to go today?"</td></tr>
+      <tr><td align="left">บรรทัดที่ยี่สิบสอง รายการที่ 2 เก็บค่า http://www.google.com และแสดงข้อความ "Google"</td></tr>
+      <tr><td align="left">บรรทัดที่ยี่สิบสาม รายการที่ 3 เก็บค่า http://www.buu.ac.th และแสดงข้อความ "Buu University"</td></tr>
+      <tr><td align="left">บรรทัดที่ยี่สิบสี่ รายการที่ 4 เก็บค่า http://www.informatics.buu.ac.th และแสดงข้อความ "Faculty of Informatics" </td></tr>
+      <tr><td align="left">บรรทัดที่ยี่สิบหก สร้างปุ่มกด ประเภท button เก็บค่า Go ถ้ากดปุ่มจะเรียกฟังก์ชั่นชื่อ doMoveBrowser(this.form) </td></tr>
+      <tr><td align="left">บรรทัดที่ยี่สิบเจ็ด สร้างปุ่มกด ประเภท reset เก็บค่า Reset</td></tr>
+      <tr><td align="left">บรรทัดที่ยี่สิบแปด สร้างกล่องข้อความ ประเภท TextBox ขนาด 40 px</td></tr>
        </table> 
 
 <p>output!</p>
-<script language=JavaScript>
-function highlightdocs(){
-    if(document.images) { document.images["docs"].src= docsOn.src; }
+<SCRIPT LANGUAGE=JavaScript>
+      function doMoveBrowser(form){
+        parent.location.href=form.list.options[getSelectedValue()].value;
 }
-
-function unhighlightdocs(){
-    if(document.images) {document.images["docs"].src= docsOff.src; }
+      function getSelectedValue(){
+        return document.form1.list.selectedIndex
 }
-if (document.images){
-    docsOn = new Image();
-    docsOn.src = "gg_color.png";
-    docsOff = new Image();
-    docsOff.src = "gg_gray.png";
+      function showURL(form){
+        form.TextBox.value = form.list.options[getSelectedValue()].value;
 }
-
-</script>
-</head>
-<body>
-  <a href="http://www.google.com"
-        onMouseOver="highlightdocs()" onMouseOut="unhighlightdocs()">
-        <img src="gg_gray.png" name=docs height="250" width="250" border=0>
-        </a>
-   </body>
-    </pre>
+</SCRIPT>
+    <h3>Pull-down Menu with URL Revealed</h3>
+<center>
+    <form name=form1>
+      <select name=list onChange=showURL(this.form)>
+        <option selected value=0> Where do you want to go today?
+        <option value="http://www.google.com">Google
+        <option value="http://www.buu.ac.th">Buu University
+        <option value="http://www.informatics.buu.ac.th">Faculty of Informatics
+      </select>&nbsp;<input type=button value=Go onClick=doMoveBrowser(this.form)>&nbsp;<input type=reset value=reset>
+      <input type=text name=TextBox size=40>
+</form>
+</center>
+</pre>
     </div>
 
-
-
-
-
-
-
-
-    
   </body>
 </html>
