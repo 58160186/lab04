@@ -448,5 +448,58 @@ if (document.images){
 </pre>
     </div>
 
+
+<div class="container-fluid bg-3 text-center">    
+  
+  <br>
+<pre>
+          <p>ข้อที่ 10</p>
+          
+          <center><img src="10.jpg" width="585" height="516"></center><br>
+      <table border="0" align="center">
+          
+
+      <tr>
+          <td align="left">บรรทัดที่หก var AR=new Array() สร้างArray ใหม่ขึ้นมา</td>
+      </tr>
+      <tr><td align="left">บรรทัดที่เจ็ด AR[0]="Message 1" ให้ AR ช่องที่0 เก็บข้อความที่ป้อนเข้ามาครั้งแรกไว้</td></tr>
+      <tr><td align="left">บรรทัดที่แปด  AR[1]="Message 2" ให้ AR ช่องที่1 เก็บข้อความที่ป้อนเข้ามาครั้งที่สองไว้</td></tr>
+      <tr><td align="left">บรรทัดที่เก้า AR[2]="Message 3" ให้ AR ช่องที่ 2 เก็บข้อความที่ป้อนเข้ามาครั้งที่สามไว้</td></tr>
+      <tr><td align="left">บรรทัดที่สิบ var i=0 ให้ตัวแปร i=0</td></tr>
+      <tr><td align="left">บรรทัดที่สิบเอ็ด สร้าง function next()</td></tr>
+      <tr><td align="left">บรรทัดที่สิบสอง ตัวแปร i เพิ่มชึ้นรอบละ 1 และหารเอาเศษกับความยาวของตัวแปร AR</td></tr>
+      <tr><td align="left">บรรทัดที่สิบสาม ทำตามคำสั่ง document getElementById("here").innerHTML = AR[i]</td></tr>
+      <tr><td align="left">บรรทัดที่ยี่สิบเอ็ด เมื่อคลิกที่ข้อความ"DEFAULT" จะเรียกใช้ฟังก์ชั่น next() และจะเปลี่ยนข้อความตั้งแต่ Message 1 -3 </td></tr>
+      
+       </table> 
+
+<p>output!</p>
+<script>
+        var AR=new Array();
+        AR[0]="Message 1";
+        AR[1]="Message 2";
+        AR[2]="Message 3";
+        var i=0;
+        function next(){
+            i=(++i)%AR.length;
+            document.getElementById("here").innerHTML=AR[i];
+        }
+        </script>
+        </head>
+        <body>
+            Click on the middle to have it change what it says.<br>
+            Text-1<hr>
+            <div onclick="next()" id="here">DEFAULT</div><hr>
+            Text-2
+
+            <br>
+    </pre>
+    </div>
+
+
+
+
+
+
   </body>
 </html>
